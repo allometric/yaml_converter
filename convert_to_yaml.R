@@ -101,7 +101,7 @@ format_flow_yaml <- function(model_defs) {
   paste(lines, collapse = "\n")
 }
 
-convert_publication <- function(pub, out_dir = "yaml_models", alpha_dir = NULL) {
+convert_publication <- function(pub, out_dir = "../models/publications", alpha_dir = NULL) {
   if (!is.null(alpha_dir)) {
     pub_dir <- file.path(out_dir, alpha_dir, pub@id)
   } else {
